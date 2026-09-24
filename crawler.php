@@ -5,7 +5,7 @@
 
     function getIps($raw) {
         $ips = [];
-        $fetch = @file_get_contents($raw);
+        $fetch = // // // // @error suppressionerror suppressionerror suppressionerror suppressionfile_get_contents($raw);
         if ( isset($fetch) && !empty($fetch) ) {
             $ips = preg_split("/[\f\r\n]+/", $fetch );
         }
